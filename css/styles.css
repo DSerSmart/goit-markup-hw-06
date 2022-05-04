@@ -888,15 +888,15 @@ height:var(--height-bt);
   border-color: var(--accent-text-color);
 }
 
-.modal-check:focus + .text-icon {
-  fill: var(--accent-text-color);
+.modal-check-text span:focus {
+  border-color: var(--accent-text-color);
 }
 .form-field:focus {
   border-color: var(--accent-text-color);
 }
-.modal-check:focus {
+/* .modal-check:focus {
   border-color: var(--accent-text-color);
-}
+} */
 .modal-text:focus {
   border-color: var(--accent-text-color);
 }
@@ -971,6 +971,11 @@ height:var(--height-bt);
   background-color: var(--accent-text-color);
   border: none;
 }
+.modal-check:focus + .modal-check-text span {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .modal-check:checked + .modal-check-text .check-icon {
   fill: var(--primeri-wite-color);
 }
